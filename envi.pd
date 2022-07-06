@@ -1,0 +1,56 @@
+#N canvas 497 239 1058 454 10;
+#X obj 74 50 inlet~;
+#X obj 75 160 outlet~;
+#X obj 75 123 *~;
+#X obj 148 13 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 401 138 hsl 128 50 0 1000 0 0 empty empty attack -2 -8 0 10
+-133184 -260160 -260160 11300 1;
+#X obj 180 83 pack 1 f;
+#X obj 270 63 delay;
+#X obj 401 265 hsl 128 50 0 1000 0 0 empty empty release -2 -8 0 10
+-133184 -260160 -260160 4000 1;
+#X obj 401 204 hsl 128 50 0 1000 0 0 empty empty hold -2 -8 0 10 -133184
+-260160 -260160 7200 1;
+#X obj 241 23 inlet;
+#X obj 167 174 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 180 117 line;
+#X obj 262 107 pack 0 f;
+#X obj 557 138 vradio 25 0 0 2 empty empty long/short -29 -10 0 10
+-133184 -260160 -260160 0;
+#X obj 610 144 + 1;
+#X obj 611 169 *;
+#X obj 558 213 vradio 25 0 0 2 empty empty long/short -29 -10 0 10
+-133184 -260160 -260160 1;
+#X obj 611 219 + 1;
+#X obj 612 244 *;
+#X obj 557 274 vradio 25 0 0 2 empty empty long/short -29 -10 0 10
+-133184 -260160 -260160 0;
+#X obj 610 280 + 1;
+#X obj 611 305 *;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 15 0;
+#X connect 5 0 11 0;
+#X connect 6 0 12 0;
+#X connect 7 0 21 0;
+#X connect 8 0 18 0;
+#X connect 9 0 3 0;
+#X connect 10 0 2 1;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 1;
+#X connect 15 0 5 1;
+#X connect 16 0 17 0;
+#X connect 17 0 18 1;
+#X connect 18 0 6 1;
+#X connect 19 0 20 0;
+#X connect 19 0 12 1;
+#X connect 20 0 21 1;
+#X connect 20 0 12 1;
+#X connect 21 0 12 1;
+#X coords 0 -1 1 1 208 241 1 387 87;

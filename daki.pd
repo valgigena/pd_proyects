@@ -1,0 +1,19 @@
+#N canvas 0 38 1740 887 12;
+#X obj 108 137 hsl 128 50 0 127 0 0 empty empty Volumen -2 -8 0 10
+-133184 -260160 -260160 0 1;
+#X obj 118 307 dbtorms;
+#X floatatom 148 331 5 0 0 0 - - -, f 5;
+#X obj 93 516 *~;
+#X obj 118 355 pack f 10;
+#X obj 118 379 line~;
+#X obj 96 655 dac~;
+#X obj 61 40 inlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 3 0 6 0;
+#X connect 3 0 6 1;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 7 0 3 0;
+#X coords 0 -1 1 1 157 84 2 96 118;
